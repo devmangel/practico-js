@@ -1,0 +1,111 @@
+:root{
+--Yellow-Grey-Red-1-hex: #BB2020; 
+--Yellow-Grey-Red-2-hex: #06111C; 
+--Yellow-Grey-Red-3-hex: #BEC7C7; 
+--Yellow-Grey-Red-4-hex: #FFEB4D; 
+--Yellow-Grey-Red-5-hex: #121317; 
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    background: linear-gradient(90deg, rgba(18,19,23,1) 0%, rgba(190,199,199,1) 400%);
+    color: #BEC7C7;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.landing{
+    font-size: 1.6rem;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0px 1rem 10%;
+    font-size: 1.6rem;
+    width: 100%;
+}
+h1 {
+    line-height: 5rem;
+    color: #FFEB4D;
+    width: 100%;
+}
+p {
+    line-height: 2rem;
+}
+/*
+Design of square
+*/
+.square{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+.square__container{
+    margin-bottom: 50px;
+}
+.subTittle{
+    font-size: 1.8rem;
+    margin: 0 auto;
+    color: #FFEB4D;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    padding: 30px 20px;
+    box-shadow: 1px 1px 5px #FFEB4D;
+}
+
+.form-tittle{
+    text-align: center;
+    font-size: 1.6rem;
+}
+input {
+    width: 150px;
+    height: 2,5rem;
+    background-color: transparent;
+    text-align: center;
+    color: #BEC7C7;
+    margin: 20px auto 30px;
+    padding: 2px;
+    border-bottom: #FFEB4D 1px solid;
+    align-items: center;
+    outline: none;
+    box-decoration-break: clone;
+}
+
+input::placeholder{
+    text-align: center;
+    color: #06111C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #BEC7C7;
+}
+.button{
+    padding: 10px;
+    width: 40%;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #BEC7C7;
+    font-weight: 200;
+}
+
+.button:hover{
+    background-color: #121317;
+    color: #FFEB4D;
+    outline: none;
+}
+

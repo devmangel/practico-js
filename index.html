@@ -4,19 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <title>MathBot</title>
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
-    <p>primer taller</p>
-    <section>
-        <h2>calcula el area y el perimetro de un cuadrado</h2>
-        <form action="">
-            <label for=""></label>
-            <input type="text">
-            <button></button>
-            <button></button>
-        </form>
+    <section class="landing">
+        <header class="header">
+            <h1>MathBot</h1>
+            <p>Hi, I'm <b>MathBot.</b><br>
+            I'll help you with <b>Math.</b></p>
+            <div>
+                <img src="" alt="">
+            </div>
+        </header>
+        <section class="square">
+            <div class="square__container">
+                <h2 class="subTittle">Let's calculate the perimeter and area of square</h2>
+                    <form class="form-container">
+                        <label class="form-tittle" for="InputCuadrado">Write the length of one of the sides</label>
+                        <input id="InputCuadrado" type="number" placeholder="Write a number">
+                        <button class="button" onclick="calcularPerimetroCuadrado()" type="button">Perimeter</button>
+                        <button class="button" onclick="calcularAreaCuadrado()" type="button">Area</button>
+                    </form>
+            </div>
+            <div class="square__container">
+                <h2 class="subTittle">Let's calculate the perimeter and area of square</h2>
+                    <form class="form-container">
+                        <label class="form-tittle" for="InputCuadrado">Write the length of one of the sides</label>
+                        <input id="InputCuadrado" type="number" placeholder="Write a number">
+                        <button class="button" onclick="calcularPerimetroCuadrado()" type="button">Perimeter</button>
+                        <button class="button" onclick="calcularAreaCuadrado()" type="button">Area</button>
+                    </form>
+            </div>
+            <div class="square__container">
+                <h2 class="subTittle">Let's calculate the perimeter and area of square</h2>
+                    <form class="form-container">
+                        <label class="form-tittle" for="InputCuadrado">Write the length of one of the sides</label>
+                        <input id="InputCuadrado" type="number" placeholder="Write a number">
+                        <button class="button" onclick="calcularPerimetroCuadrado()" type="button">Perimeter</button>
+                        <button class="button" onclick="calcularAreaCuadrado()" type="button">Area</button>
+                    </form>
+            </div>
+        </section>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
