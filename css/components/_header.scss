@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0px 1rem 10%;
+    font-size: 1.6rem;
+    width: 100%;
+
+    h1 {
+        line-height: 6rem;
+        color: var(--yellow);
+        width: 100%;
+    }
+    p {
+        line-height: 2rem;
+        font-family: reboto;
+        width: 90%;
+    }
+}

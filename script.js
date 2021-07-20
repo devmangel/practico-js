@@ -13,9 +13,9 @@ function areaCruadrado(lado){
 
 // Triangulo perimetro
 
-function trianguloParimeter(lateral,base){
+function trianguloParimeter(base,side){
     
-    return (lateral * 2) + base;
+    return (side * 2) + base;
 }
 // Triangulo area
 
@@ -41,11 +41,12 @@ function circuloCircunferencia(radio){
 }
 // Circulo Area
     function circuloCircunferencia(radio){
-
-    let areaCirculo = (radio * radio) * pi;
+    
+        let pi = Math.PI;
+    return (radio * radio) * pi;
 
 }
-// Interaccion con html
+// Function Square
 
 function calcularPerimetroCuadrado(){
     
@@ -54,7 +55,7 @@ function calcularPerimetroCuadrado(){
 
     let perimetro = perimetroCuadrado(value);
 
-    alert("El perimetro es de: " + perimetro);
+    alert("The perimeter is: " + perimetro);
 
 }
 
@@ -65,6 +66,72 @@ function calcularAreaCuadrado(){
 
     let area = areaCruadrado(value);
     
-    alert("El area es de: " + area);
+    alert("The area is: " + area);
 }
+
+// Function Triangle
+
+function calcularPerimetroTriangulo(){
+
+    let inputTriangle = document.getElementById("InputTriangleBase");
+    let baseT = inputTriangle.value;
+
+    let input = document.getElementById("InputTriangleSide");
+    let sideT = input.value;
+
+    let perimeterT = trianguloParimeter(baseT,sideT)
+
+    alert("The perimeter is: " + perimeterT);
+}
+
+function calcularAreaTriangulo(){
+
+    let inputTrArea = document.getElementById("InputTriangleBase");
+    let baseTriagle = inputTrArea.value;
+
+    let sideArea = document.getElementById("InputTriangleSide");
+    let heighTriangle = sideArea.value;
+
+    let areaT = triangleArea(heighTriangle,baseTriagle)
+
+    alert("The area is: " + areaT);
+
+}
+
+// Function Circle
+
+function calcularDiametroCirculo(){
+
+    let inputRadio = document.getElementById("inputCircle");
+    let radio = inputRadio.value;
+
+    let diameter = circuloDiamtro(radio);
+
+    alert("The diameter of the circle is: " + diameter);
+
+}
+
+function calcularCircunferenciaCirculo(){
+
+    let inputRadio = document.getElementById("inputCircle");
+    let radio = inputRadio.value;
+
+    let pi = Math.PI;
+    let diameter = circuloDiamtro(radio);
+    let circumference = diameter * pi;
+
+    alert("The circumference of the circle is: " + circumference.toFixed(2));
+}
+
+function calcularAreaCirculo(){
+
+    let inputRadio = document.getElementById("inputCircle");
+    let radio = inputRadio.value;
+
+    let areaCircle = circuloCircunferencia(radio);
+
+    alert("The area of the circle is: " + areaCircle.toFixed(2));
+}
+
+
 

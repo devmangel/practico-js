@@ -1,0 +1,205 @@
+:root {
+  --red: #BB2020;
+  --grey: #BEC7C7;
+  --yellow: #FFEB4D;
+  --black: #121317;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #06111C), color-stop(200%, #BEC7C7));
+  background: linear-gradient(to right top, #06111C 50%, #BEC7C7 200%);
+  color: var(--grey);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0px 1rem 10%;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.header h1 {
+  line-height: 6rem;
+  color: var(--yellow);
+  width: 100%;
+}
+
+.header p {
+  line-height: 2rem;
+  font-family: reboto;
+  width: 90%;
+}
+
+.figures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+}
+
+.figures .square {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr;
+      grid-template-rows: 3fr;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 250px;
+  margin: 50px 30px;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 15px var(--yellow);
+          box-shadow: 1px 1px 15px var(--yellow);
+}
+
+.figures .square__tittle-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.figures .square__tittle-box h2 {
+  font-size: 1.8rem;
+}
+
+.figures .square__tittle-box .figure-square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(./../../icons/square.svg);
+  margin-left: 10px;
+}
+
+.figures .square__tittle-box .figure-triangle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(./../../icons/triangle.svg);
+  margin-left: 10px;
+  background-size: cover;
+}
+
+.figures .square__tittle-box .figure-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(./../../icons/circle.svg);
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.figures .square__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr;
+      grid-template-rows: 3fr;
+  grid-gap: 20px;
+}
+
+.figures .square__form .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.figures .square__form .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.figures .square__form .button-container .button-perimeter, .figures .square__form .button-container .button-area {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: var(--black);
+  color: var(--yellow);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 10px;
+}
+
+.figures .square__form .input {
+  width: 50%;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  border: 1px 1px 1px 1px var(--black);
+  border-bottom: 1px var(--yellow) solid;
+  color: var(--grey);
+  outline: none;
+}
+
+.figures .square__form .form-tittle {
+  font-size: 1.7rem;
+}
+
+.input::-webkit-input-placeholder {
+  color: var(--yellow);
+}
+
+.input:-ms-input-placeholder {
+  color: var(--yellow);
+}
+
+.input::-ms-input-placeholder {
+  color: var(--yellow);
+}
+
+.input::placeholder {
+  color: var(--yellow);
+}
+/*# sourceMappingURL=global.css.map */

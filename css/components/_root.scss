@@ -1,0 +1,25 @@
+:root {
+    --red: #BB2020;
+    --grey: #BEC7C7;
+    --yellow: #FFEB4D;
+    --black: #121317;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #06111C), color-stop(200%, #BEC7C7));
+    background: linear-gradient(to right top, #06111C 50%, #BEC7C7 200%);
+    color: var(--grey);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    font-size: 1.6rem;
+  }
