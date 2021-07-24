@@ -50,23 +50,26 @@ function circuloCircunferencia(radio){
 
 function calcularPerimetroCuadrado(){
     
-    const input = document.getElementById("InputCuadrado");
-    const value = input.value;
+    const input = document.getElementById("InputCuadrado").value;
 
-    let perimetro = perimetroCuadrado(value);
+    let perimetro = perimetroCuadrado(input);
 
-    alert("The perimeter is: " + perimetro);
+    let result = document.getElementById("resultSquare");
+
+    result.innerText = "= " + perimetro;
 
 }
 
 function calcularAreaCuadrado(){
 
-    let input = document.getElementById("InputCuadrado");
-    let value = input.value;
+    let input = document.getElementById("InputCuadrado").value;
+    // let value = input.value;
 
-    let area = areaCruadrado(value);
+    let area = areaCruadrado(input);
     
-    alert("The area is: " + area);
+    let result = document.getElementById("resultSquare");
+
+    result.innerText = "= " + area;
 }
 
 // Function Triangle
@@ -76,12 +79,13 @@ function calcularPerimetroTriangulo(){
     let inputTriangle = document.getElementById("InputTriangleBase");
     let baseT = inputTriangle.value;
 
-    let input = document.getElementById("InputTriangleSide");
-    let sideT = input.value;
+    let sideT = document.getElementById("InputTriangleSide").value;
 
     let perimeterT = trianguloParimeter(baseT,sideT)
 
-    alert("The perimeter is: " + perimeterT);
+    let result = document.getElementById("resultTriangle");
+
+    result.innerText = "= " + perimeterT;
 }
 
 function calcularAreaTriangulo(){
@@ -89,12 +93,13 @@ function calcularAreaTriangulo(){
     let inputTrArea = document.getElementById("InputTriangleBase");
     let baseTriagle = inputTrArea.value;
 
-    let sideArea = document.getElementById("InputTriangleSide");
-    let heighTriangle = sideArea.value;
+    let heighTriangle = document.getElementById("InputTriangleSide").value;
 
     let areaT = triangleArea(heighTriangle,baseTriagle)
 
-    alert("The area is: " + areaT);
+    let result = document.getElementById("resultTriangle");
+
+    result.innerText = "= " + areaT;
 
 }
 
@@ -102,36 +107,78 @@ function calcularAreaTriangulo(){
 
 function calcularDiametroCirculo(){
 
-    let inputRadio = document.getElementById("inputCircle");
-    let radio = inputRadio.value;
+    let radio = document.getElementById("inputCircle").value;
 
     let diameter = circuloDiamtro(radio);
 
-    alert("The diameter of the circle is: " + diameter);
+    let result = document.getElementById("resultCircle");
+
+    result.innerText = "= " + diameter;
 
 }
 
 function calcularCircunferenciaCirculo(){
 
-    let inputRadio = document.getElementById("inputCircle");
-    let radio = inputRadio.value;
+    let radio = document.getElementById("inputCircle");
 
     let pi = Math.PI;
     let diameter = circuloDiamtro(radio);
     let circumference = diameter * pi;
 
-    alert("The circumference of the circle is: " + circumference.toFixed(2));
+    let result = document.getElementById("resultCircle");
+
+    result.innerText = "= " + circumference.toFixed(2);
 }
 
 function calcularAreaCirculo(){
 
-    let inputRadio = document.getElementById("inputCircle");
-    let radio = inputRadio.value;
+    let radio = document.getElementById("inputCircle").value;
 
     let areaCircle = circuloCircunferencia(radio);
 
-    alert("The area of the circle is: " + areaCircle.toFixed(2));
+    let result = document.getElementById("resultCircle");
+
+    result.innerText = "= " + areaCircle.toFixed(2);
 }
+
+let list = [
+    100,
+    300,
+    100,
+    900,
+    100,
+    900,
+    400
+];
+
+listCount = {};
+
+list.map(
+
+    function (item){
+
+        if (listCount[item]){
+
+            listCount[item] += 1;
+        }
+        else{
+            listCount[item] = 1;
+        }
+    }
+);
+ 
+let listArray = Object.entries(listCount).sort(
+    function (a,b){
+       return a[1] - b[1]
+    }
+    );
+
+let result = (listArray.length - 1);
+
+console.log(listArray[result]);
+
+
+
 
 
 
