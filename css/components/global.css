@@ -61,6 +61,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 30px;
+  border-bottom: 1px solid var(--grey);
 }
 
 .figures .square {
@@ -206,6 +207,108 @@ body {
 
 .input::placeholder {
   color: var(--yellow);
+}
+
+.average {
+  padding: 20px 10px;
+}
+
+.average .average__tittle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 150px;
+}
+
+.average .average__tittle-container .average__tittle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.average .average__tittle-container .average__subtittle {
+  font-weight: 400;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.average .average__subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  padding: 40px 0px;
+  -webkit-box-shadow: 1px 1px 15px var(--red);
+          box-shadow: 1px 1px 15px var(--red);
+}
+
+.average .average__subject .subject {
+  margin-left: 10%;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.average .average__subject .subject span {
+  font-weight: 400;
+}
+
+.average .average__subject .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.average .average__subject .input-container .label-score {
+  padding: 2px 25px;
+}
+
+.average .average__subject .input-container .label-weight {
+  padding: 2px 25px;
+}
+
+.average .average__subject .input-container .score {
+  width: 30%;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+  height: 30px;
+  background-color: var(--grey);
+  margin-top: 10px;
+}
+
+.average .average__subject .input-container .weighing {
+  width: 30%;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+  height: 30px;
+  background-color: var(--grey);
+  margin-top: 10px;
+}
+
+.average .average__subject .average__button {
+  width: 30%;
+  height: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 15px var(--red);
+          box-shadow: 1px 1px 15px var(--red);
+  background-color: var(--black);
+  color: var(--grey);
 }
 
 @media screen and (min-width: 750px) {

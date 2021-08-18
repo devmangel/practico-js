@@ -62,8 +62,25 @@
                     </div>
                 </form>
             </div>
-            
         </section>
+        <article class="average">
+             <div class="average__tittle-container">
+                 <h2 class="average__tittle">Weighted average</h2>
+                 <h3 class="average__subtittle">Easy way to know what's your <b>final score</b>, just set up your score and the weighing at each subject</h3>
+             </div>
+             <div class="average__subject">
+                 <h4 class="subject"><span>Subject: </span>Math</h4>
+                 <div class="input-container">
+                     <label class="label-score" for="scoreOne">Type your score in Math</label>
+                     <label class="label-weight" for="weighingOne">Type the weighing in Math</label>
+                 </div>
+                 <div class="input-container">
+                    <input class="score" type="number" id="scoreOne input" placeholder="e.g 7.8" >
+                    <input class="weighing" type="number" id="weighingOne input" placeholder="e.g 5">
+                </div>
+                 <button class="average__button" type="button" onclick="">Calculate</button>
+             </div>
+        </article>
     <script src="./script.js"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@ function circuloCircunferencia(radio){
 
 function calcularPerimetroCuadrado(){
     
-    const input = document.getElementById("InputCuadrado").value;
+    let input = document.getElementById("InputCuadrado").value;
 
     let perimetro = perimetroCuadrado(input);
 
@@ -119,11 +119,12 @@ function calcularDiametroCirculo(){
 
 function calcularCircunferenciaCirculo(){
 
-    let radio = document.getElementById("inputCircle");
+    let radio = document.getElementById("inputCircle").value;
 
-    let pi = Math.PI;
+    let pi = 3.14;
     let diameter = circuloDiamtro(radio);
-    let circumference = diameter * pi;
+    
+    let circumference = (diameter * pi);
 
     let result = document.getElementById("resultCircle");
 
@@ -141,41 +142,44 @@ function calcularAreaCirculo(){
     result.innerText = "= " + areaCircle.toFixed(2);
 }
 
-let list = [
-    100,
-    300,
-    100,
-    900,
-    100,
-    900,
-    400
+// Promedio ponderado
+
+let finalNotes = [
+    {
+        course: "Educación Física",
+        note: 10,
+        credit: 1,
+    },
+    {
+        course: "Programación",
+        note: 8,
+        credit: 1,
+    },
+    {
+        course: "Finanzas personales",
+        note: 7,
+        credit: 10,
+    },
 ];
 
-listCount = {};
-
-list.map(
-
-    function (item){
-
-        if (listCount[item]){
-
-            listCount[item] += 1;
-        }
-        else{
-            listCount[item] = 1;
-        }
+let multiplyNotes = finalNotes.map(function(item){
+        return item.note * item.credit;
     }
 );
- 
-let listArray = Object.entries(listCount).sort(
-    function (a,b){
-       return a[1] - b[1]
-    }
-    );
 
-let result = (listArray.length - 1);
+let sumNotes = multiplyNotes.reduce(function(a,b){
 
-console.log(listArray[result]);
+    return a + b;
+});
+
+let listCredits = finalNotes.map(function(item){
+
+    return item.credit;
+});
+
+let sumCredits = listCredits.reduce(function(a,b){return a + b});
+
+let average = sumNotes / sumCredits;
 
 
 

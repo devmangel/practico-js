@@ -1,0 +1,96 @@
+.average{
+    padding: 20px 10px;
+
+
+    .average__tittle-container{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 150px;
+
+            .average__tittle{
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .average__subtittle{
+
+                font-weight: 400;
+                align-self: center;
+            }
+
+    }
+
+    .average__subject{
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 40px 0px;
+        box-shadow: 1px 1px 15px var(--red);
+
+        .subject{
+
+            margin-left: 10%;
+            margin-bottom: 10px;
+            font-size: 2rem;
+
+            span{
+
+                font-weight: 400;
+            }
+        }
+
+        .input-container{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            width: 100%;
+            font-size: 1.4rem;
+
+            .label-score{
+
+                padding: 2px 25px;
+            }
+
+            .label-weight{
+
+                padding: 2px 25px;
+            }
+
+            .score{
+
+                width: 30%;
+                border-radius: 15px;
+                text-align: center;
+                outline: none;
+                height: 30px;
+                background-color: var(--grey);
+                margin-top: 10px;
+            }
+
+            .weighing{
+                width: 30%;
+                border-radius: 15px;
+                text-align: center;
+                outline: none;
+                height: 30px;
+                background-color: var(--grey);
+                margin-top: 10px;
+
+            }
+        }
+        
+        .average__button{
+            width: 30%;
+            height: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 1px 1px 15px var(--red);
+            background-color: var(--black);
+            color: var(--grey);
+        }
+    }
+}
